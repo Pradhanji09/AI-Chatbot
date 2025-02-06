@@ -19,6 +19,7 @@ This is a simple AI-powered chatbot built using **JavaScript** and **React.js**.
 - The chatbot processes your query and responds accordingly.
 - You can extend functionality by integrating APIs or NLP models.
 
+
 ## Contact
 For any queries, reach out via:
 - **Email:** sou030rav@gmail.com
