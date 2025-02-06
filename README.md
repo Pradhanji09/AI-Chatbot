@@ -1,8 +1,26 @@
-# React + Vite
+# Chatbot Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a simple AI-powered chatbot built using **JavaScript** and **React.js**. The chatbot provides an interactive user experience and  Real-time chatbot responses.
 
-Currently, two official plugins are available:
+## Features
+- User-friendly interface with React.js
+- Real-time chatbot responses
+- State management using React hooks
+- Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React.js** - Frontend framework
+- **JavaScript** - Programming language
+- **CSS** - Styling
+
+## Usage
+- Type a message in the input field.
+- The chatbot processes your query and responds accordingly.
+- You can extend functionality by integrating APIs or NLP models.
+
+## Contact
+For any queries, reach out via:
+- **Email:** sou030rav@gmail.com
+- **LinkedIn:** [Sourav Pradhan](https://www.linkedin.com/in/sourav-pradhan-377ba7213/)
+
