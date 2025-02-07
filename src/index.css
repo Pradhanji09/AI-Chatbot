@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#f4f0ff, #dacdff);
+}
+.chatbot-popup {
+  width: 420px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px 0 rgba(0, 0, 0, 0.5);
+}
+
+.chatbot-popup .chatbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #6d4fc2;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.chatbot-header .header-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-info svg {
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  border-radius: 50%;
+  fill: #6d4fc2;
+  padding: 6px;
+  flex-shrink: 0;
+}
+.header-info .logo-text {
+  color: #fff;
+  font-size: 1.31rem;
+  font-weight: 600;
+}
+.chatbot-header button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.9rem;
+  padding-top: 3px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #6d4fc2;
+  transition: 0.2s ease;
+}
+
+.chatbot-header button:hover {
+  background: #593bab;
+}
