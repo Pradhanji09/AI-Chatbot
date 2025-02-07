@@ -66,3 +66,49 @@ body {
 .chatbot-header button:hover {
   background: #593bab;
 }
+
+.chatbot-body {
+  height: 460px;
+  padding: 25px 22px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chatbot-body .message {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.chatbot-body .bot-message svg {
+  height: 35px;
+  width: 35px;
+  background: #6d4fc2;
+  border-radius: 50%;
+  fill: #fff;
+  padding: 6px;
+  flex-shrink: 0;
+  margin-bottom: 2px;
+  align-self: flex-end;
+}
+.chatbot-body .message .message-text {
+  padding: 10px 14px;
+  max-width: 75%;
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-size: 0.9rem;
+}
+.chatbot-body .bot-message .message-text {
+  background: #f6f2ff;
+  border-radius: 13px 13px 13px 3px;
+}
+.chatbot-body .user-message {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.chatbot-body .user-message .message-text {
+  background: #6d4fc2;
+  color: #fff;
+  border-radius: 13px 13px 3px 13px;
+}
