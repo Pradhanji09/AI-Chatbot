@@ -77,7 +77,10 @@ body {
   gap: 20px;
   border-radius: 15px;
   margin-bottom: 55px;
+  scrollbar-width: thin;
+  scrollbar-color: #8e7ebb transparent;
 }
+
 .chatbot-body .message {
   display: flex;
   align-items: center;
