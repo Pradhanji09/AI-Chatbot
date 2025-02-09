@@ -34,7 +34,7 @@ const ChatForm = ({ chatHistory, getBotResponse, setChatHistory }) => {
       ]);
       //Generatting bot response
       getBotResponse([...chatHistory, { role: "user", text: userMessage }]);
-    }, 600);
+    }, 1000);
   };
 
   return (
