@@ -9,10 +9,10 @@ const App = () => {
   const chatBodyRef = useRef();
   const getBotResponse = async (history) => {
     //Upadting chat history by bot response
-    const updatesHistory = (text) => {
+    const updatesHistory = (text, isError = false) => {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text },
+        { role: "model", text, isError },
       ]);
     };
 
@@ -48,7 +48,7 @@ const App = () => {
       updatesHistory(botResponseText);
       console.log(chatHistory);
     } catch (error) {
-      console.log(error);
+      updatesHistory(error.message, true);
     }
   };
 

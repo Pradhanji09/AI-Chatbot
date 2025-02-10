@@ -41,7 +41,7 @@ body {
 #chatbot-toggler {
   position: fixed;
   right: 50px;
-  bottom: 15px;
+  bottom: 25px;
   border: none;
   background: #593bab;
   border-radius: 50%;
@@ -115,6 +115,9 @@ body {
   scrollbar-color: #8e7ebb transparent;
 }
 
+.chatbot-body .error .message-text {
+  color: #ff0000;
+}
 .chatbot-body .message {
   display: flex;
   align-items: center;
