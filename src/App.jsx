@@ -5,6 +5,7 @@ import ChatMessage from "./components/ChatMessage";
 
 const App = () => {
   const [chatHistory, setChatHistory] = useState([]);
+  const [showChatbot, setShowChatbot] = useState(false);
   const chatBodyRef = useRef();
   const getBotResponse = async (history) => {
     //Upadting chat history by bot response
@@ -60,7 +61,14 @@ const App = () => {
   }, [chatHistory]);
 
   return (
-    <div className="container">
+    <div className={`container ${showChatbot ? "show-chatbot" : ""}`}>
+      <button
+        id="chatbot-toggler"
+        onClick={() => setShowChatbot((prev) => !prev)}
+      >
+        <span className="material-symbols-outlined">mode_comment</span>
+        <span className="material-symbols-outlined">close </span>
+      </button>
       <div className="chatbot-popup">
         {/* Chatbot Header*/}
         <div className="chatbot-header">
@@ -68,7 +76,10 @@ const App = () => {
             <Chaboticon />
             <h2 className="logo-text ">Chatbot </h2>
           </div>
-          <button className="material-symbols-outlined">
+          <button
+            onClick={() => setShowChatbot((prev) => !prev)}
+            className="material-symbols-outlined"
+          >
             keyboard_arrow_down
           </button>
         </div>
